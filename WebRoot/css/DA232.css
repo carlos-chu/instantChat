@@ -1,0 +1,370 @@
+@import url( http://x.libdd.com/farm1/c32ade/3dd11007/EE8F9.css );
+h1 {
+	margin: 0px; padding: 0px; border: currentColor;
+}
+h2 {
+	margin: 0px; padding: 0px; border: currentColor;
+}
+h3 {
+	margin: 0px; padding: 0px; border: currentColor;
+}
+h4 {
+	margin: 0px; padding: 0px; border: currentColor;
+}
+h5 {
+	margin: 0px; padding: 0px; border: currentColor;
+}
+h6 {
+	margin: 0px; padding: 0px; border: currentColor;
+}
+ul {
+	margin: 0px; padding: 0px; border: currentColor;
+}
+ol {
+	margin: 0px; padding: 0px; border: currentColor;
+}
+img {
+	margin: 0px; padding: 0px; border: currentColor;
+}
+body {
+	background: rgb(42, 42, 42); margin: 0px auto; font-family: Arial, Helvetica, sans-serif; font-size: 12px;
+}
+li {
+	list-style: none;
+}
+.clear {
+	clear: both;
+}
+a {
+	color: rgb(255, 255, 255); text-decoration: none; -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out;
+}
+#background-img .loading {
+	background: rgb(0, 0, 0); padding: 10px; border-radius: 5px; left: 50%; top: 300px; width: 65px; height: 65px; text-align: center; line-height: 65px; position: absolute; z-index: 999; -webkit-border-radius: 5px; -moz-border-radius: 5px;
+}
+#background-img img.append_image {
+	left: 0px; top: 0px; width: 100%; height: auto; position: fixed; min-height: 100%; min-width: 1024px;
+}
+@media screen and (max-width:1024px)
+{
+#background-img img.append_image {
+	left: 50%; margin-left: -512px;
+}
+}
+#container {
+	margin: 0px auto 20px; width: 980px; height: auto; overflow: hidden; position: relative; z-index: 1; -ms-word-break: break-all; -ms-word-wrap: break-word;
+}
+#container #nav {
+	width: 980px; height: 33px; margin-left: 35px; float: left; position: fixed; z-index: 1;
+}
+#container #nav ul li {
+	background: rgb(0, 0, 0); padding: 0px 12px; height: 33px; line-height: 33px; float: left;
+}
+#container #nav ul li a {
+	color: rgb(255, 255, 255);
+}
+#container #nav ul li a:hover {
+	color: rgb(100, 100, 100);
+}
+#container #topbar {
+	background: url("http://x.libdd.com/farm1/c32ade/cb5a5fb0/5ADA4.png") no-repeat rgb(71, 71, 71); width: 35px; height: 33px; float: left; display: block; position: fixed;
+}
+#container #topbar a {
+	background: url("http://x.libdd.com/farm1/c32ade/cb5a5fb0/5ADA4.png") no-repeat rgb(71, 71, 71); width: 35px; height: 33px; float: left; display: block; position: fixed;
+}
+#container #topbar a.switch {
+	padding: 0px; width: 35px; cursor: pointer;
+}
+#container #topbar a.switch2 {
+	background-position: 0px -32px; display: none;
+}
+#container #main {
+	width: 620px; margin-top: 30px;
+}
+#container #sidebar {
+	background: rgb(26, 26, 25); width: 240px; margin-top: 33px; margin-left: 667px; position: fixed; box-shadow: -1px 3px 5px #222; -webkit-box-shadow: -1px 3px 5px #222; -moz-box-shadow: -1px 3px 5px #222;
+}
+#container #main {
+	height: auto; color: rgb(255, 255, 255); overflow: hidden; float: left;
+}
+#container #sidebar {
+	height: auto; color: rgb(255, 255, 255); overflow: hidden; float: left;
+}
+#container #main #description {
+	background: url("http://x.libdd.com/farm1/c32ade/e40b8db9/ADD7E.png") no-repeat; margin: 30px 0px; padding: 15px; color: rgb(255, 255, 255); font-size: 14px;
+}
+#container #main #description a {
+	color: rgb(230, 230, 230);
+}
+#container #main #description-text {
+	background: url("http://x.libdd.com/farm1/c32ade/c54bab78/D5719.png") no-repeat right bottom; line-height: 22px;
+}
+#container #main #nodescription {
+	height: 50px;
+}
+#container #main #notes {
+	margin-top: 20px;
+}
+#container #main .post {
+	background: rgb(255, 255, 255); padding: 15px; height: auto; overflow: hidden; margin-bottom: 28px; box-shadow: 0px 5px 5px #222; -webkit-box-shadow: 0px 5px 5px #222; -moz-box-shadow: 0px 5px 5px #222;
+}
+#container #main .post span.icon {
+	width: 50px; height: 50px; display: block;
+}
+#container #main .post span.icon a {
+	width: 50px; height: 50px; display: block;
+}
+#container #main .post span.icon {
+	background: float: left;
+}
+
+#container #main .post .entry h2 {
+	height: auto; overflow: hidden;
+}
+#container #main .post .entry h2 {
+	font: 24px/normal "Microsoft Yahei", Arial, sans-serif; padding: 0px; color: rgb(0, 0, 0); margin-bottom: 18px; font-size-adjust: none; font-stretch: normal;
+}
+#container #main .post .entry h2 a {
+	font: 24px/normal "Microsoft Yahei", Arial, sans-serif; padding: 0px; color: rgb(0, 0, 0); margin-bottom: 18px; font-size-adjust: none; font-stretch: normal;
+}
+#container #main .post .entry h2 a:hover {
+	color: rgb(84, 84, 84);
+}
+#container #main .post .ablum_cover {
+	width: 100px; height: 100px; overflow: hidden; margin-bottom: 10px; float: left;
+}
+#container #main .post .ablum_info {
+	width: 305px; margin-left: 15px; float: left;
+}
+#container #main .post .ablum_info li {
+	list-style: none; padding: 0px 8px 5px; color: rgb(0, 0, 0); font-size: 12px;
+}
+#container #main .post .ablum_info li .audioplayer {
+	margin: 8px 0px 16px;
+}
+#container #main .post .entry {
+	width: 534px; height: auto; color: rgb(84, 84, 84); line-height: 22px; margin-top: -32px; margin-left: 50px; float: left;
+}
+#container #main .post .entry blockquote {
+	color: rgb(120, 120, 120); padding-left: 10px; margin-left: 0px; border-left-color: rgb(222, 222, 222); border-left-width: 2px; border-left-style: solid;
+}
+#container #main .post .entry a {
+	color: rgb(55, 148, 187);
+}
+#container #main .post .entry a:hover {
+	text-decoration: underline;
+}
+#container #main .post .entry a img:hover {
+	opacity: 0.8; -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; -moz-opacity: 0.8; -webkit-opacity: 0.8;
+}
+#container #main .post .entry .photoset {
+	width: 534px; overflow: hidden; margin-bottom: 0px;
+}
+#container #main .post .entry .photoset .item {
+	margin: 2px 5px -10px 0px; width: 172px; overflow: hidden; float: left;
+}
+#container #main .post .entry .photoset .item img {
+	width: 172px; height: auto;
+}
+#container #main .post .post_meta {
+	margin-top: 34px;
+}
+#container #main .post .post_meta span {
+	color:#000000;
+	text-indent: 18px;
+}
+#container #main .post .post_meta span a {
+	color: rgb(164, 164, 164);
+	text-indent: 18px;
+}
+#container #main .post .post_meta span a:hover {
+	color: rgb(180, 180, 180);
+}
+#container #main .post .post_meta span.hot {
+	float: right;
+}
+#container #main .post .post_meta span.more {
+	float: right;
+}
+#container #main .post .post_meta span.tag {
+	float: right;
+}
+#container #main .post .post_meta span.hot {
+	margin-right: 15px;
+}
+#container #main .post .post_meta span.more {
+	
+}
+#container #main .post .post_meta span.tag {
+	padding-left: 0px;
+}
+#container #main .post .post_meta span.date {
+	padding-left: 0px;
+}
+#container #main .text.post span.icon {
+	
+}
+#container #main .photo.post span.icon {
+	background-position: 0px -40px;
+}
+#container #main .video.post span.icon {
+	background-position: 0px -75px;
+}
+#container #main .audio.post span.icon {
+	background-position: 0px -110px;
+}
+#container #main .link.post span.icon {
+	background-position: 0px -145px;
+}
+#container #main #page-navi {
+	height: 54px; margin-top: 20px;
+}
+#container #main #page-navi a {
+	background: rgb(55, 148, 187); font: 30px/normal "宋体"; width: 54px; height: 46px; text-align: center; color: rgb(255, 255, 255); padding-top: 8px; display: block; font-size-adjust: none; font-stretch: normal;
+}
+#container #main #page-navi a:hover {
+	background: rgb(63, 164, 205);
+}
+#container #main #page-navi a.older {
+	float: left;
+}
+#container #main #page-navi a.newer {
+	float: right;
+}
+#container #sidebar h1 {
+	padding: 20px 10px; height: auto; overflow: hidden; border-bottom-color: rgb(98, 97, 97); border-bottom-width: 1px; border-bottom-style: dashed; display: block;
+}
+#container #sidebar h1 a img {
+	height: auto; margin-bottom: -10px; max-width: 220px;
+}
+#container #sidebar h1 a {
+	font: 40px/normal "Microsoft Yahei", Arial; margin: 15px; color: rgb(255, 255, 255); font-size-adjust: none; font-stretch: normal;
+}
+#container #sidebar #social {
+	padding-left: 10px; border-bottom-color: rgb(98, 97, 97); border-bottom-width: 1px; border-bottom-style: dashed;
+}
+#container #sidebar #social a {
+	background: url("http://x.libdd.com/farm1/c32ade/e033359f/7982A.png") no-repeat; margin: 9px 0px 9px 7px; width: 20px; height: 18px; line-height: 18px; float: left; display: block; opacity: 0.6; -moz-opacity: 0.6; -o-opacity: 0.6;
+}
+#container #sidebar #social a:hover {
+	opacity: 1; -moz-opacity: 1; -o-opacity: 1;
+}
+#container #sidebar #social a#sina {
+	
+}
+#container #sidebar #social a#douban {
+	background-position: -25px 0px;
+}
+#container #sidebar #social a#tqq {
+	background-position: -51px 0px;
+}
+#container #sidebar #social a#flickr {
+	background-position: -78px 0px;
+}
+#container #sidebar #social a#qzone {
+	background-position: -103px 0px;
+}
+#container #sidebar #social a#twitter {
+	background-position: -130px 0px;
+}
+#container #sidebar #social a#facebook {
+	background-position: -156px 0px;
+}
+#container #sidebar #social a#renren {
+	background-position: -183px 0px;
+}
+#container #sidebar #profile {
+	padding-top: 15px; border-bottom-color: rgb(98, 97, 97); border-bottom-width: 1px; border-bottom-style: dashed;
+}
+#container #sidebar #profile .avtar {
+	margin: 0px 10px 15px 15px; float: left;
+}
+#container #sidebar #profile .avtar {
+	width: 40px; height: 40px;
+}
+#container #sidebar #profile .avtar img {
+	width: 40px; height: 40px;
+}
+#container #sidebar #profile .bio {
+	line-height: 18px; overflow: hidden; padding-top: 10px;
+}
+#container #sidebar #profile .bio h4 a {
+	color: rgb(160, 160, 160); font-size: 14px; font-weight: normal;
+}
+#container #sidebar #list ul li {
+	height: auto; color: rgb(255, 255, 255); text-indent: 17px; font-size: 14px; border-bottom-color: rgb(98, 97, 97); border-bottom-width: 1px; border-bottom-style: dashed;
+}
+#container #sidebar #list ul li a {
+	background: url("http://x.libdd.com/farm1/c32ade/cb5a5fb0/5ADA4.png") no-repeat right 0px rgb(0, 0, 0); padding: 8px 0px; width: 100%; display: block;
+}
+#container #sidebar #list ul li a.b1 {
+	background-position: right -32px; display: none;
+}
+#container #sidebar #list ul li a.b2 {
+	background-position: right 0px;
+}
+#container #sidebar #list ul li a.b3 {
+	background-position: right -32px;
+}
+#container #sidebar #list ul li a.b5 {
+	background-position: right -32px;
+}
+#container #sidebar #list ul li a.b4 {
+	background-position: right 0px; display: none;
+}
+#container #sidebar #list ul li a.b6 {
+	background-position: right 0px; display: none;
+}
+#container #sidebar #list ul li #tag {
+	margin: 10px; height: auto; line-height: 22px; text-indent: 0px; overflow: hidden;
+}
+#container #sidebar #list ul li #tag a {
+	color: rgb(180, 180, 180); display: inline;
+}
+#container #sidebar #list ul li #tag a:hover {
+	color: rgb(255, 255, 255);
+}
+#container #sidebar #list ul li ul#sub-menu {
+	display: none;
+}
+#container #sidebar #list ul li #search {
+	display: none;
+}
+#container #sidebar #list ul li ul#sub-menu li {
+	padding: 0px 10px;
+}
+#container #sidebar #list ul li ul#sub-menu li:last-child {
+	border: currentColor;
+}
+#container #sidebar #list ul li ul#sub-menu li a {
+	color: rgb(180, 180, 180);
+}
+#container #sidebar #list ul li ul#sub-menu li a:hover {
+	color: rgb(255, 255, 255);
+}
+#container #sidebar #list ul li ul#sub-menu li a {
+	font-size: 12px;
+}
+#container #sidebar #list ul li #search {
+	font-size: 12px;
+}
+#container #sidebar #list ul li #search {
+	margin: 0px auto; padding: 10px 0px; width: 240px;
+}
+#container #sidebar #list ul li #search .input {
+	background: rgb(51, 51, 51); border: 0px currentColor; height: 22px; color: rgb(180, 180, 180); text-indent: 10px;
+}
+#container #sidebar #list ul li #search .btn {
+	background: rgb(0, 0, 0); padding: 0px 10px; border: 0px currentColor; height: 25px; color: rgb(100, 100, 100); cursor: pointer;
+}
+#container #sidebar #copyright {
+	padding: 15px; line-height: 22px;
+}
+#container #sidebar #copyright {
+	color: rgb(114, 114, 114);
+}
+#container #sidebar #copyright a {
+	color: rgb(114, 114, 114);
+}
+.rich-content img {
+	height: auto; margin-bottom: 10px; max-width: 534px;
+}

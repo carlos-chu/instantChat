@@ -1,0 +1,172 @@
+.check{
+	font-family: '微软雅黑',Tahoma,Arial,Helvetica,sans-serif;
+	word-wrap: break-word;
+	font-size:14px;
+	color: orange;
+}
+
+.spanUserImg{
+	width:70px;
+	height:100px;
+	overflow: hidden;
+}
+
+.userHomeMainImg{
+	width:140px;
+	height:auto;
+}
+
+.onlineUserImg{
+	width:45px;
+	/*height:auto;*/
+	height:45px;
+	margin-left:5px;
+}
+
+.uploadedUserImg{
+	width:104px;
+	height:104px;
+}
+
+hr{
+	margin-top:2px;
+	margin-bottom:2px;
+}
+
+.mainFont{
+	font-family: '微软雅黑',Tahoma,Arial,Helvetica,sans-serif;
+	word-wrap: break-word;
+	font-size:14px;
+}
+
+.titleFont{
+ 	font-family: '微软雅黑',Tahoma,Arial,Helvetica,sans-serif;
+	word-wrap: break-word;
+}
+
+.mainTextarea{
+	width:80%;
+	float:left;
+ }
+ 
+ .mainTextareaButton{
+ 	float:left;
+ }
+ 
+ .showInformation{
+ 	width:100%;
+	height:300px;
+ }
+ .showInformation1{
+ 	width:100%;
+	height:auto;
+ }
+ .showInformationed{
+ 	width:100%;
+	height:350px;
+ }
+ .showInformationed1{
+ 	width:100%;
+	height:400px;
+ }
+ .showInfoContent{
+ 	width:100%;
+	font-family: '微软雅黑',Tahoma,Arial,Helvetica,sans-serif;
+	word-wrap: break-word;
+	font-size:14px;
+ }
+ .showInfoContent img{
+ 	width:35px;
+	height:35px;
+	margin-left:5px;
+	margin-right:5px;
+ }
+ .showInfoContent hr{
+ 	padding-top:10px;
+ }
+ 
+ .imgSize{
+ 	width:35px;
+	height:35px;
+	float:left;
+ }
+ 
+ .imgSizePublishUser{
+ 	width:50px;
+	height:auto;
+ }
+ 
+.imgSizeInviteUser{
+ 	width:100px;
+	height:auto;
+ }
+ .icon{
+ 	overflow: hidden;
+ }
+ .imgSizeInvite{
+ 	width:60px;
+	height:55px;
+	float:left;
+ }
+ 
+ .contentSize{
+ 	width:300px;
+	height:auto;
+	float:left;
+ }
+ 
+ .publishQuestion{
+ 	margin-top:10px;
+	margin-left:5px;
+ }
+ 
+ .register-title{
+ 	margin-top:-20px;
+ }
+ 
+ .register-main{
+ 	margin-top:20px;
+ }
+ 
+ .pingfen{
+ 	float:right;
+ 	margin-right: 15px;
+ }
+ 
+  .time{
+ 	float:right;
+ 	margin-right: 0px;
+ 	
+ }
+ 
+ .fellowImg{
+ 	width:80px;
+	height:70px;
+	float:left;
+ }
+ 
+ .chooseOk{
+ 	padding-left: 220px;
+ 	height: 100px;
+ 	overflow: hidden;
+ }
+ 
+.indexTitle{
+ 	color: green;
+ }
+ 
+.timeStyle{
+ 	color:gray;
+ 	float: right;
+ }
+ 
+.questionStyle{
+ 	color:black;
+ }
+ 
+.warnUserStyle{
+ 	color: gray;
+ }
+ 
+ 
+ 

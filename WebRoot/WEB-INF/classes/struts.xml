@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.i18n.reload" value="true" />
+	<constant name="struts.configuration.xml.reload" value="true" />
+	<constant name="struts.convention.default.parent.package" value="basePackage"/>
+	
+	<package name="basePackage" extends="struts-default">
+	<!-- ==================================用户注册登陆=================================== -->
+		<!-- 用户注册 -->
+		<action name="userRegisterAction" class="com.instantChat.action.UserAction">
+			<result name="invalid.token">/public/describe.jsp</result>
+			<result name="success">/public/describe.jsp</result>
+			<interceptor-ref name="defaultStack" />
+            <interceptor-ref name="token" />
+		</action>
+		<!-- 用户登陆 -->
+		<action name="userLoginAction" class="com.instantChat.action.UserAction">
+			<result name="success">/indexIwen.jsp</result>
+			<result name="false">/indexIwen.jsp</result>
+		</action>
+		<!-- 用户上传头像 存在upload目录下 -->
+		<action name="uploadTouxiang" class="com.instantChat.action.UploadTouxiangAction">
+			<param name="savePath">/upload</param>
+		</action>
+		<!-- 用户上传头像后查询出头像的Src -->
+		<action name="userGetTxAction" class="com.instantChat.action.UserAction">
+			<result name="success">/public/describe.jsp</result>
+		</action>
+		<!-- 用户更新介绍 -->
+		<action name="userUpdateIntroAction" class="com.instantChat.action.UserAction">
+			<result name="success">/indexIwen.jsp</result>
+		</action>
+		<!-- 用户更新接受状态 -->
+		<action name="userUpdateIfAcceptAction" class="com.instantChat.action.UserAction">
+			<result>/index.jsp</result>
+		</action>
+		<!-- 用户更新取消接受状态 -->
+		<action name="userUpdateCancelAcceptAction" class="com.instantChat.action.UserAction">
+			<result>/index.jsp</result>
+		</action>
+	<!-- ==================================用户标签相关=================================== -->
+		<!-- 用户添加标签 -->
+		<action name="userAddTagAction" class="com.instantChat.action.TagAction">
+			<result>/public/describe.jsp</result>
+		</action>
+		<!-- 用户删除标签 -->
+		<action name="userDeleteTagAction" class="com.instantChat.action.TagAction">
+			<result>/public/describe.jsp</result>
+		</action>
+	<!-- ==================================初始化数据相关=================================== -->
+		<!-- 用户初始化信息和标签 -->
+		<action name="userInitDataAndTagsAction" class="com.instantChat.action.InitUserDataAction">
+			<result name="success">/public/describe.jsp</result>
+			<result name="false">/indexIwen.jsp</result>
+		</action>
+		<!-- 用户初始化信息 -->
+		<action name="userInitDataAction" class="com.instantChat.action.InitUserDataAction">
+			<result name="success">/indexIwen.jsp</result>
+			<result name="false">/public/describe.jsp</result>
+		</action>
+		<!-- 用户初始化主页信息 -->
+		<action name="userInitUserHomeDataAction" class="com.instantChat.action.InitUserDataAction">
+			<result name="success">/public/userHome.jsp</result>
+			<result name="false">/indexIwen.jsp</result>
+		</action>
+		<!-- 用户初始化主页信息 -->
+		<action name="userLoadQuestionAction" class="com.instantChat.action.InitUserDataAction">
+			<result name="success">/includeData/moreUserQuestions.jsp</result>
+			<result name="false">/indexIwen.jsp</result>
+		</action>
+		<!-- 所有初始化主页信息 -->
+		<action name="initIndexDataAction" class="com.instantChat.action.InitIndexDataAction">
+			<result name="success">/index.jsp</result>
+		</action>
+		<!-- 所有初始化问题广场页面 -->
+		<action name="questionsAction" class="com.instantChat.action.InitIndexDataAction">
+			<result name="success">/questions.jsp</result>
+		</action>
+		<!-- 所有初始化达人广场页面 -->
+		<action name="usersAction" class="com.instantChat.action.InitIndexDataAction">
+			<result name="success">/users.jsp</result>
+		</action>
+		<!-- 所有初始化话题讨论页面 -->
+		<action name="discussesAction" class="com.instantChat.action.InitIndexDataAction">
+			<result name="success">/discusses.jsp</result>
+		</action>
+	<!-- ==================================用户问题相关=================================== -->
+		<!-- 用户初始化信息和标签 -->
+		<action name="userPublicAnswerAction" class="com.instantChat.action.InitUserDataAction">
+			<result name="success">/public/publish.jsp</result>
+			<result name="false">/indexIwen.jsp</result>
+		</action>
+		<!-- 用户发表问题，保存问题 -->
+		<action name="userPublicInstantQuestionAction" class="com.instantChat.action.PublishInstantProblemAction">
+			<result name="success">/public/dialogical.jsp</result>
+			<result name="false">/public/publish.jsp</result>
+		</action>
+		<!-- 用户通过questionId查看问题 -->
+		<action name="userScanQuestionAction" class="com.instantChat.action.QuestionAction">
+			<result name="success">/public/instantQuestion.jsp</result>
+			<result name="false">/indexIwen.jsp</result>
+		</action>
+		<!-- 用户通过questionId讨论发表自己的评论 -->
+		<action name="userDiscussAction" class="com.instantChat.action.QuestionAction">
+			<result name="success">/public/discussQuestion.jsp</result>
+			<result name="false">/indexIwen.jsp</result>
+		</action>
+	<!-- ==================================用户回复问题相关=================================== -->
+		<!-- 用户回答即时问题，即单人聊天，保存回答对话 -->
+		<action name="userSaveInstantRespondAction" class="com.instantChat.action.RespondAction">
+			<result>/public/dialogical.jsp</result>
+		</action>
+	<!-- ==================================用户关注相关=================================== -->
+		<!-- 用户关注其他用户 -->
+		<action name="userFellowPeopleAction" class="com.instantChat.action.UserFriendsAction">
+			<result>/public/userHome.jsp</result>
+		</action>
+		<!-- 用户取消关注其他用户 -->
+		<action name="userCancelFellowPeopleAction" class="com.instantChat.action.UserFriendsAction">
+			<result>/public/userHome.jsp</result>
+		</action>
+	<!-- ==================================用户评分相关=================================== -->
+		<!-- 用户为回答用户打分 -->
+		<action name="userGradeAction" class="com.instantChat.action.UserAction">
+			<result name="success">/indexIwen.jsp</result>
+			<result name="false">/public/userHome.jsp</result>
+		</action>
+	<!-- ==================================用户重置信息相关=================================== -->
+		<!-- 用户修改信息得到tag -->
+		<action name="userGetResetInfoAction" class="com.instantChat.action.ResetInfoAction">
+			<result name="success">/public/resetUserInfo.jsp</result>
+			<result name="false">/public/userHome.jsp</result>
+		</action>
+		<!-- 用户修改信息名子和签名 -->
+		<action name="userResetInfoAction" class="com.instantChat.action.ResetInfoAction">
+			<result>/public/resetUserInfo.jsp</result>
+		</action>
+	<!-- ==================================用户邀请好友相关=================================== -->
+		<!-- 用户邀请好友 -->
+		<action name="userInviteFriendAction" class="com.instantChat.action.InviteUserAnswerAction">
+			<result name="success">/public/inviteFriend.jsp</result>
+			<result name="false">/public/inviteFriend.jsp</result>
+		</action>
+		<!-- 用户邀请好友 -->
+		<action name="userInviteFriendToChatAction" class="com.instantChat.action.InviteUserAnswerAction">
+			<result name="success">/public/dialogical.jsp</result>
+			<result name="false">/public/userHome.jsp</result>
+		</action>
+	<!-- ==================================用户提醒相关=================================== -->
+		<!-- 得到用户提醒 -->
+		<action name="userWarnAction" class="com.instantChat.action.UserWarnAction">
+			<result name="success">/public/userWarn.jsp</result>
+			<result name="false">/public/userHome.jsp</result>
+		</action>
+		<!-- ajax得到用户提醒 -->
+		<action name="getMoreWarnsAction" class="com.instantChat.action.UserWarnAction">
+			<result>/public/userWarn.jsp</result>
+		</action>
+		<!-- load得到用户提醒 -->
+		<action name="getMoreWarnsAction2" class="com.instantChat.action.UserWarnAction">
+			<result name="success">/includeData/moreUserWarn.jsp</result>
+		</action>
+	<!-- ==================================用户测试相关=================================== -->
+		
+	</package>
+
+</struts>
+
+
+
+
+
+
+
+
+

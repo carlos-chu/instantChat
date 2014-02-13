@@ -1,0 +1,8 @@
+#fileQueue {
+	width: 395px;
+	height: 58px;
+	overflow: auto;
+	border: 1px solid #E5E5E5;
+	margin-bottom: 10px;
+	float: left;
+}

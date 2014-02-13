@@ -1,0 +1,46 @@
+
+#container #nav ul li{background:#000000}
+#container #nav ul li a{color:#FFFFFF}
+#container #nav ul li a:hover{color:#646464}
+#container #topbar,
+#container #topbar a{background-color:#474747}
+#container #sidebar{
+    background-color:#1a1a19;
+    filter:alpha(opacity=90);
+    opacity:.9;
+    -moz-opacity:.9;
+    -webkit-opacity:.9;
+}
+#container #sidebar h1 a{color:#FFFFFF}
+#container #sidebar h1,#container #sidebar #social,#container #sidebar #profile,#container #sidebar #list ul li{border-color:#7C7B7A;}
+#container #sidebar #profile .bio h4 a{color:#BABAB9;}
+#container #sidebar #list ul li a{background-color:#242423;}
+#container #sidebar #list ul li #tag a,#container #sidebar #list ul li ul#sub-menu li a{color:#CECECD;}
+#container #sidebar #list ul li #tag a:hover，#container #sidebar #list ul li ul#sub-menu li a:hover{#FFFFFF;}
+#container #sidebar #list ul li #search .input{background-color:#4D4D4C;color:#B0B0AF;}
+#container #sidebar #list ul li #search .btn{
+color:#B0B0AF;
+background:#1A1A19;
+}
+#container #sidebar #copyright,
+#container #sidebar #copyright a{
+  color:#8C8C8B;
+}
+#container #sidebar,#container #main .post{
+   -webkit-box-shadow:-1px 3px 5px #222222;
+   -moz-box-shadow:-1px 3px 5px #222222;
+   box-shadow:-1px 3px 5px #222222;
+}
+#container #main #description{
+   color:#FFFFFF;
+}
+#container #main #description a{
+   color:#e6e6e6;
+}
+#container #main #page-navi a{
+   color:#FFFFFF;
+   background:#3794bb;
+}
+#container #main #page-navi a:hover{
+   background:#87E4FF;
+}
